@@ -28,11 +28,15 @@ label {
 }
 
 input {
-  font-family: inherit;
   height: 1.5rem;
   width: 4rem;
   margin-right: 3px;
 }
+
+input::placeholder, textarea::placeholder{
+  color:rgb(77, 77, 77);
+}
+
 
 label span {
   margin-right: 4px;
@@ -65,6 +69,8 @@ label span {
 
 .exp_educ ul{
   position:relative;
+  width: 300px;
+
 }
 
 .exp_educ ul::before{
@@ -76,6 +82,8 @@ label span {
   left:0px;
   top:0px;
   z-index: -1;
+  
+
 }
 
 .exp_educ ul li{
@@ -93,6 +101,7 @@ label span {
   border-radius: 15px;
   content:'';
   background-color: #F0446B;
+  box-shadow: black 1px 1px;
   left: -3px;
   top: 8px;
   position: absolute;
@@ -101,7 +110,7 @@ label span {
 .text-pink{
   color: #F0446B;
   font-weight: bold;
-  text-shadow:rgba(190, 0, 0, 0.541) 1px 1px;
+  text-shadow:black 1px 1px;
 }
 
 .text-wh{
@@ -109,3 +118,13 @@ label span {
   
   text-shadow:rgba(114, 114, 114, 0.575) 2px 2px;
 }
+
+
+.transicion{
+  transition: all ease-in-out .1s;
+}
+
+.agrandar:hover{
+  transform: scale(1.1);
+}
+
